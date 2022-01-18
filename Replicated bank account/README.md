@@ -1,4 +1,5 @@
 # Replicated bank account
+A distributed system where multiple clients all share the same transactions via a daemon, ensuring they all are in the same state.
 
 ## Requirements:
 Java spread toolkit is necessary for hosting the daemon which the account replicas will connect to.
