@@ -1,4 +1,4 @@
-#Implementation notes
+# Implementation notes
 The distributed system is split between three main parts. Client, Proxy and Server. The client(s)
 objective is to read queries from an input file, request a server from the proxy and write responses from
 these queries to an output file. All clients have a reference to the same proxy. The proxy will perform
@@ -14,7 +14,7 @@ thus not written to the output file. Instead, it will say that the request was p
 client will send jobs sequentially, and wait for a response before sending the next. In order to stress test
 the proxy / servers, it is necessary to run several clients simultaneously.
 
-#Compiling / setup
+# Compiling / setup
 No packages etc are used, so just do a simple javac *.java to compile. Running the system
 requires a bit more setup. You will need 3 terminals open.
 1. In one terminal, first start the registry, then run ServerSimulator. Running ServerSimulator with
@@ -23,7 +23,7 @@ a -n argument will create naive servers. Running without the flag creates server
 3. Once the proxy is running, either run a NaiveClient, Client(cached) or the simulator.sh script.
 The client programs will run a single client.
 
-#Running the bash script
+# Running the bash script
 Running the script:
 The script should be run with 3 arguments, all numbers. The first indicates how many clients you want
 to start simultaneously, the second should be a 0 or 1, indicating whether you are running with cached
