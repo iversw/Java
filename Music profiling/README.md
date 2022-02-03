@@ -12,7 +12,9 @@ a cache, the client will check its cache for requested information before asking
 the result is found in cache, none of the times specified in the assignment text will be available, and
 thus not written to the output file. Instead, it will say that the request was processed by cache. The
 client will send jobs sequentially, and wait for a response before sending the next. In order to stress test
-the proxy / servers, it is necessary to run several clients simultaneously.
+the proxy / servers, it is necessary to run several clients simultaneously. After the queries are completed,
+an output file will be written with information about which queries were retrieved from cache, as well as
+the speed of the execution.
 
 # Compiling / setup
 No packages etc are used, so just do a simple javac *.java to compile. Running the system
